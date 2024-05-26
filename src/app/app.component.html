@@ -1,0 +1,22 @@
+<div class="containerfluid">
+  <h1 style="text-align: center;">Signup Page</h1>
+  <form>
+    
+     <div >
+        <label>Name</label>
+        <input type="text" class="form-control sini" name="username" [(ngModel)]="name">
+      </div>
+      <div >
+        <label>Email</label>
+        <input type="email" class="form-control sini" name="email" [(ngModel)]="email" >
+      </div>
+      <button class="btn btn-primary"  (click)="clk($event)">Submit form</button>   
+  </form>
+    <div *ngIf="boolvalue">  {{getJsonValue}} </div>
+
+</div>
+
+
+
+
+
